@@ -132,10 +132,10 @@
           if (settings.scale != 1) el.addClass("ibg-exiting")
           // Same condition applies as mouseenter. Rescale the background back to its original scale
           el.addClass("ibg-exiting").find("> .ibg-bg").css({
-            "-webkit-transform": "matrix(" + settings.initialScale + ",0,0,1,0,0)",
-            "-moz-transform": "matrix(" + settings.initialScale + ",0,0,1,0,0)",
-            "-o-transform": "matrix(" + settings.initialScale + ",0,0,1,0,0)",
-            "transform": "matrix(" + settings.initialScale + ",0,0,1,0,0)",
+            "-webkit-transform": "matrix(" + settings.initialScale + ",0,0," + settings.initialScale + ",0,0)",
+            "-moz-transform": "matrix(" + settings.initialScale + ",0,0," + settings.initialScale + ",0,0)",
+            "-o-transform": "matrix(" + settings.initialScale + ",0,0," + settings.initialScale + ",0,0)",
+            "transform": "matrix(" + settings.initialScale + ",0,0," + settings.initialScale + ",0,0)",
             "-webkit-transition": "-webkit-transform " + settings.animationSpeed + " linear",
             "-moz-transition": "-moz-transform " + settings.animationSpeed + " linear",
             "-o-transition": "-o-transform " + settings.animationSpeed + " linear",
